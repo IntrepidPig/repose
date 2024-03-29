@@ -33,7 +33,8 @@ enum pkg_entry {
     PKG_FILES,
     PKG_BACKUP,
     PKG_DELTAS,
-    PKG_MAKEPKGOPT
+    PKG_MAKEPKGOPT,
+    PKG_XDATA
 };
 
 typedef struct pkg {

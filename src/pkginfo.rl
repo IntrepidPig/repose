@@ -44,7 +44,8 @@
            | 'makedepend'  %{ parser->entry = PKG_MAKEDEPENDS; }
            | 'checkdepend' %{ parser->entry = PKG_CHECKDEPENDS; }
            | 'backup'      %{ parser->entry = PKG_BACKUP; }
-           | 'makepkgopt'  %{ parser->entry = PKG_MAKEPKGOPT; };
+           | 'makepkgopt'  %{ parser->entry = PKG_MAKEPKGOPT; }
+           | 'xdata'       %{ parser->entry = PKG_XDATA; };
 
     entry = header ' = ' [^\n]* @store %emit '\n';
     comment = '#' [^\n]* '\n';
